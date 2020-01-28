@@ -27,7 +27,7 @@
   <style media="screen">
     body {
       font-family: 'PT Serif', serif !important;
-      background-color: #F9F7F2;
+      background-color: #f9f7f2;
     }
 
     .colorear {
@@ -41,22 +41,52 @@
       .f_mt-50 {
         margin-top: 50px;
       }
+
+      .f_ml-50 {
+        margin-left: 66px;
+      }
     }
 
 
-    .titleSecc{
-color: #333333;
-font-family: "Roboto Light";
-font-size: 24px;
-font-weight: 300;
-line-height: 32px;
-}
-    .titleSubSecc{
+    .titleSecc {
+      color: #333333;
+      font-family: "Roboto Light";
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+
+    .titleSubSecc {
       color: #333333;
       font-family: "PT Serif";
       font-size: 56px;
       font-weight: 700;
       line-height: 64px;
+      margin-bottom: 50px;
+
+    }
+
+    .texto {
+      color: #333333;
+      font-family: "Roboto Light";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 32px;
+
+    }
+
+    .b_n {
+
+      style="     margin-top: 75px;    margin-bottom: 75px; background: rgba(249,247,242,1);
+background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 247, 242, 1)), color-stop(50%, rgba(249, 247, 242, 1)), color-stop(51%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+      background: -webkit-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: -o-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: linear-gradient(to bottom, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f7f2', endColorstr='#000000', GradientType=0);
+      "
+
     }
   </style>
 
@@ -65,7 +95,7 @@ line-height: 32px;
 
 <body>
 
-  <div class="">
+  <div class="container-fluid">
     <div class="banner colorear ">
       <div class="container">
 
@@ -180,35 +210,33 @@ line-height: 32px;
 
         </div>
         <div class="thim-click-to-bottom">
-          <a href="#about" class="scroll">
+          <a href="#Discover" class="scroll">
             <i class="fa  fa-chevron-down"></i>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- DOS -->
-    <div class="container  " style="     margin-top: 75px;    margin-bottom: 75px;">
-      <div class="row">
-        <div class="col-sm-12 col-lg-6">
-          <img src="images/barra.png" alt="" class="w-100">
-        </div>
-        <div class="col-sm-12 col-lg-6 ">
-          <div class="row align-items-center h-100">
-            <div class="col-12 mx-auto">
-              <div class="jumbotron" style="background-color:#F9F7F2;">
-                <div class="row  ">
-                  <div class="col-12 titleSecc">
-                    Discover
-                  </div>
-                  <div class="col-12 titleSubSecc">
-                    Our History
-                  </div>
-                  <div class="col-12">
-                    A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good.
-                  </div>
-                  <div class="col-6">
-                    <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Read more</button>
+    <!-- DOS Discover -->
+    <div id="Discover" class="container  " style="     margin-top: 160px;    margin-bottom: 160px;">
+      <div class="container-fluid  ">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 p-0" style="background: #bba285;  z-index: 1; border-radius: 3px;">
+            <img src="images/lamps.png" alt="" class="w-100" style="  opacity: 0.4; z-index: 2; border-radius: 3px;">
+          </div>
+          <div class="col-sm-12 col-lg-6 ">
+            <div class="row align-items-center h-100">
+              <div class="col-12 mx-auto">
+                <div class="jumbotron" style="background-color:#F9F7F2;">
+                  <div class="row  ">
+                    <div class="col-12 titleSecc"> Discover </div>
+                    <div class="col-12 titleSubSecc"> Our History </div>
+                    <div class="col-12 texto">
+                      A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good.
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Read more</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -220,63 +248,65 @@ line-height: 32px;
 
 
     <!-- tres -->
-    <div class="container bg-white  p-5" style="     margin-top: 75px;    margin-bottom: 75px;">
-      <div class="row">
+    <div class="container-fluid bg-white   " style=" margin-left: 100px;    padding-top: 160px;    padding-bottom: 160px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+      <div class="container     ">
+        <div class="row">
 
-        <div class="col-sm-12 col-lg-6 ">
-          <div class="row align-items-center h-100">
-            <div class="col-12 mx-auto">
-              <div class="jumbotron bg-white "  >
-                <div class="row  ">
-                  <div class="col-12 titleSecc">
-                    Check out our
-                  </div>
-                  <div class="col-12 titleSubSecc">
-                    Seasonal Offers
-                  </div>
-                  <div class="col-12">
-                    <div class="  clearfix">
-                      <div class="float-left">Alaskan Fish & Chips</div>
-                      <div class="float-right">$14.00</div>
+          <div class="col-sm-12 col-lg-6 ">
+            <div class="row align-items-center h-100">
+              <div class="col-12 mx-auto">
+                <div class="pr-4 bg-white ">
+                  <div class="row  ">
+                    <div class="col-12 titleSecc">
+                      Check out our
+                    </div>
+                    <div class="col-12 titleSubSecc">
+                      Seasonal Offers
+                    </div>
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Alaskan Fish & Chips</div>
+                        <div class="float-right">$14.00</div>
                       </div>
                       <div> Served with soy sauce, wasabi, pickled ginger and chopsticks </div>
                       <hr>
-                  </div>
+                    </div>
 
-                  <div class="col-12">
-                    <div class="  clearfix">
-                      <div class="float-left">Fishermen’s Basket</div>
-                      <div class="float-right">$7.00</div>
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Fishermen’s Basket</div>
+                        <div class="float-right">$7.00</div>
                       </div>
                       <div> Snow crab, avocado, cucumber, tobiko, Japanese mayonnaise </div>
                       <hr>
-                  </div>
+                    </div>
 
-                  <div class="col-12">
-                    <div class="  clearfix">
-                      <div class="float-left">Chicken Breat Saute Sec </div>
-                      <div class="float-right">$5.00</div>
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Chicken Breat Saute Sec </div>
+                        <div class="float-right">$5.00</div>
                       </div>
                       <div> A Latte is a coffee drink made with espresso and steamed milk </div>
                       <hr>
-                  </div>
+                    </div>
 
-                  <div class="col-12">
-                    <div class="  clearfix">
-                      <div class="float-left">Crisp Pork Belly</div>
-                      <div class="float-right">$18.00</div>
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Crisp Pork Belly</div>
+                        <div class="float-right">$18.00</div>
                       </div>
                       <div> Candied salmon, basil potato puree, baby kale marsala </div>
                       <hr>
-                  </div>
+                    </div>
 
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-lg-6">
-          <img src="images/seasonal.png" alt="" class="w-100">
+          <div class="col-sm-12 col-lg-6">
+            <img src="images/seasonal.png" alt="" class="w-100">
+          </div>
         </div>
       </div>
     </div>
@@ -284,7 +314,7 @@ line-height: 32px;
 
 
     <!-- Cuatro -->
-    <div class="container  " style="     margin-top: 75px;    margin-bottom: 75px;">
+    <div class="container  " style="  padding-top: 160px;    padding-bottom: 160px;  ">
       <div class="row">
 
         <div class="col-12 text-center titleSecc"> Tasty Dishes </div>
@@ -304,36 +334,32 @@ line-height: 32px;
     </div>
 
 
-    <!-- cinco -->
-    <div class="container  bg-dark  p-5" style="     margin-top: 75px;    margin-bottom: 75px;  ">
-      <div class="row">
+    <!-- cinco Party with us! -->
+    <div class="container-fluid   " style="background-color: #000;    padding-top: 104px;    padding-bottom: 160px;   ">
+      <div class="container  ">
+        <div class="row">
 
-        <div class="col-12 text-center text-white titleSecc"> Party with us! </div>
-        <div class="col-12 text-center text-white titleSubSecc"> Upcoming Events </div>
+          <div class="col-12 text-center text-white titleSecc"> Party with us! </div>
+          <div class="col-12 text-center text-white titleSubSecc"> Upcoming Events </div>
 
-        <div class="col-sm-12 col-lg-6 pr-0">
-          <img src="images/gorro.png" alt="" class="w-100">
-        </div>
-        <div class="col-sm-12 col-lg-6 pl-0 bg-white">
+          <div class="col-sm-12 col-lg-6 pr-0">
+            <img src="images/gorro.png" alt="" class="w-100">
+          </div>
+          <div class="col-sm-12 col-lg-6 pl-0 bg-white">
 
-          <div class="row align-items-center h-100">
-            <div class="col-12 mx-auto">
-              <div class="jumbotron" style="background-color:#F9F7F2;">
-                <div class="row  ">
-                  <div class="col-12">
-                    Upcoming
-                  </div>
-                  <div class="col-12 titleSubSecc">
-                    Coffee Night
-                  </div>
-                  <div class="col-12">
-                    25 september, 2019
-                  </div>
-                   <div class="col-12">
-                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-                  </div>
-                  <div class="col-6">
-                    <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+            <div class="row align-items-center h-100">
+              <div class="col-12 mx-auto">
+                <div class="jumbotron bg-white f_ml-50 " style="    margin-bottom: 0px;padding-left: 16px;">
+                  <div class="row  ">
+                    <div class="col-12 titleSecc"> Upcoming </div>
+                    <div class="col-12 titleSubSecc"> Coffee Night </div>
+                    <div class="col-12"> 25 september, 2019 </div>
+                    <div class="col-12 texto text-justify">
+                      Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -345,22 +371,19 @@ line-height: 32px;
 
 
 
-    <!-- seis -->
-    <div class="container  " style="     margin-top: 75px;    margin-bottom: 75px;">
+    <!-- seis  Gallery-->
+    <div class="container  " style="      padding-top: 120px;    padding-bottom: 120px;  ">
       <div class="row">
 
         <div class="col-12 text-center titleSecc"> Gallery </div>
         <div class="col-12 text-center titleSubSecc"> Our Interior </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_01.png" alt="" class="w-100"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_02.png" alt="" class="w-100"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_03.png" alt="" class="w-100"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_04.png" alt="" class="w-100"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_05.png" alt="" class="w-100"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_06.png" alt="" class="w-100"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_01.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_02.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_03.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_04.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_05.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_06.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
 
-        <div class="col-12 text-center">
-          <button type="button" class="btn btn-primary mt-4  " style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
-        </div>
 
       </div>
     </div>
@@ -368,43 +391,39 @@ line-height: 32px;
 
 
     <!-- siete -->
-    <div class="container  " style="     margin-top: 75px;    margin-bottom: 75px; background: rgba(249,247,242,1);
-background: -moz-linear-gradient(top, rgba(249,247,242,1) 0%, rgba(249,247,242,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,247,242,1)), color-stop(50%, rgba(249,247,242,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
-background: -webkit-linear-gradient(top, rgba(249,247,242,1) 0%, rgba(249,247,242,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
-background: -o-linear-gradient(top, rgba(249,247,242,1) 0%, rgba(249,247,242,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
-background: -ms-linear-gradient(top, rgba(249,247,242,1) 0%, rgba(249,247,242,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
-background: linear-gradient(to bottom, rgba(249,247,242,1) 0%, rgba(249,247,242,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f2', endColorstr='#000000', GradientType=0 );">
-      <div class="row">
+    <div class="container-fluid b_n  ">
+      <div class="container   ">
+        <div class="row">
 
-        <div class="col-12 text-center titleSecc"> What people </div>
-        <div class="col-12 text-center titleSubSecc"> Say About Us</div>
-        <div class="col-12   ">
+          <div class="col-12 text-center titleSecc"> What people </div>
+          <div class="col-12 text-center titleSubSecc"> Say About Us</div>
+          <div class="col-12   ">
 
-          <div class="card border-0 ">
-             <img class="card-img-top " src="images/cabeza.png" alt="" style="    width: 128px;" >
-            <div class="card-body">
-               <p class="card-text text-center">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early twilight; the jerking sun became a streak of fire, a brilliant arch.</p>
-             </div>
+            <div class="card border-0 ">
+              <img class="card-img-top " src="images/cabeza.png" alt="" style="    width: 128px;">
+              <div class="card-body">
+                <p class="card-text text-center">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early
+                  twilight; the jerking sun became a streak of fire, a brilliant arch.</p>
+              </div>
+            </div>
+
+
           </div>
 
 
-         </div>
-
-
+        </div>
       </div>
     </div>
 
 
     <!-- ocho -->
-    <div class="container bg-dark " style="     margin-top: 75px;    margin-bottom: 75px;">
+    <div class="container-fluid   " style="     background-color:#000000;">
       <div class="row">
 
         <div class="col-12 text-center text-white titleSecc"> Tasty Dishes </div>
         <div class="col-12 text-center text-white titleSubSecc"> For Lunch </div>
         <div class="col-sm-12 col-lg-4 ">
-          <div class="card"  >
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -413,19 +432,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f2', end
               <a href="#" class="card-link">Another link</a>
             </div>
           </div>
-         </div>
+        </div>
         <div class="col-sm-12 col-lg-4 ">
-          <div class="card"  >
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div> </div>
-        <div class="col-sm-12 col-lg-4 ">
-          <div class="card"  >
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -434,7 +443,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f2', end
               <a href="#" class="card-link">Another link</a>
             </div>
           </div>
-         </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 ">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -493,7 +513,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f2', end
         <div class="col-sm-12 col-lg-6 ">
           <div class="row align-items-center h-100">
             <div class="col-12 mx-auto">
-              <div class="jumbotron"  style="background-color:#F9F7F2;">
+              <div class="jumbotron" style="background-color:#F9F7F2;">
                 <div class="row  ">
                   <div class="col-12 titleSecc">
                     Reserve
@@ -532,7 +552,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f2', end
 
 
 
-  </div>
 
   <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
   <script src="jquery-3.2.1.slim.min.js"></script>
