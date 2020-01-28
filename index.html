@@ -30,6 +30,7 @@
         url(images/fondo.jpg);
     }
 
+    /* Movil*/
     @media (max-width: 576px) {
       .jumbotron {
         padding: 2rem 0rem;
@@ -53,9 +54,15 @@
         padding-top: 80px;
         padding-bottom: 80px;
         padding-right: 0px;
-        padding-left: 0px;   
+        padding-left: 0px;
+      }
+      .TastyDishes{
+        margin-top: 70px;
+        margin-bottom: 70px;
       }
     }
+
+    /* PC */
     @media (min-width: 576px) {
       .f_mt-50 {
         margin-top: 50px;
@@ -70,8 +77,13 @@
       .CheckOutOur{
         padding-top: 160px;
         padding-bottom: 160px;
-
-
+        -webkit-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+        -moz-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+        box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+      }
+      .TastyDishes{
+        margin-top: 120px;
+        margin-bottom: 120px;
       }
 
     }
@@ -248,8 +260,8 @@
     </div>
 
     <!-- tres Check out our-->
-    <div class="container-fluid      " style=" box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
-      <div class="container-fluid  bg-white  CheckOutOur ">
+    <div class="container-fluid"  >
+      <div class="container-fluid  bg-white  CheckOutOur " style="box-shadow: 20px rgba(0, 0, 0, 0.05);">
         <div class="row">
           <div class="col-sm-12 col-lg-6 ">
             <div class="row align-items-center h-100">
@@ -306,10 +318,8 @@
       </div>
     </div>
 
-
-
     <!-- Cuatro -->
-    <div class="container  " style="  padding-top: 160px;    padding-bottom: 160px;  ">
+    <div class="container TastyDishes ">
       <div class="row">
 
         <div class="col-12 text-center titleSecc"> Tasty Dishes </div>
