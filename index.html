@@ -95,7 +95,9 @@ background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
+
+    <!-- UNo Home-->
     <div class="banner colorear ">
       <div class="container">
 
@@ -210,7 +212,7 @@ background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 
 
         </div>
         <div class="thim-click-to-bottom">
-          <a href="#Discover" class="scroll">
+          <a href="#Discover" class="scroll Discover">
             <i class="fa  fa-chevron-down"></i>
           </a>
         </div>
@@ -218,7 +220,7 @@ background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 
     </div>
 
     <!-- DOS Discover -->
-    <div id="Discover" class="container  " style="     margin-top: 160px;    margin-bottom: 160px;">
+    <div id="Discover" class="container  p-0" style="     margin-top: 160px;    margin-bottom: 160px;">
       <div class="container-fluid  ">
         <div class="row">
           <div class="col-sm-12 col-lg-6 p-0" style="background: #bba285;  z-index: 1; border-radius: 3px;">
@@ -248,7 +250,7 @@ background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 
 
 
     <!-- tres -->
-    <div class="container-fluid bg-white   " style=" margin-left: 100px;    padding-top: 160px;    padding-bottom: 160px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+    <div class="container-fluid bg-white   " style="     padding-top: 160px;    padding-bottom: 160px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
       <div class="container     ">
         <div class="row">
 
@@ -554,7 +556,7 @@ background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 
 
 
   <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-  <script src="jquery-3.2.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
   <script src="popper.min.js"></script>
@@ -562,6 +564,23 @@ background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 
   <!-- bootstrap -->
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   <script src="bootstrap.min.js"></script>
+
+  <script>
+  $(function(){
+  $('a[href*=\\#]').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+  && location.hostname == this.hostname) {
+  var $target = $(this.hash);
+  $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+  if ($target.length) {
+  var targetOffset = $target.offset().top;
+  $('html,body').animate({scrollTop: targetOffset}, 800);
+  return false;
+  }
+  }
+  });
+  });
+  </script>
 
 </body>
 
