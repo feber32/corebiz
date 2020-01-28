@@ -10,19 +10,24 @@
   <meta name="keywords" content="feber">
 
   <!-- bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="bootstrap.min.css">
 
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
+  <link rel="stylesheet" href="font-awesome.min.css">
+
+  <!--
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap" rel="stylesheet">
+-->
 
   <style media="screen">
     body {
       font-family: 'PT Serif', serif !important;
-      background-color:#F9F7F2;
+      background-color: #f9f7f2;
     }
 
     .colorear {
@@ -32,10 +37,56 @@
 
     }
 
-    @media (min-width: 991px){
-      .f_mt-50{
+    @media (min-width: 991px) {
+      .f_mt-50 {
         margin-top: 50px;
       }
+
+      .f_ml-50 {
+        margin-left: 66px;
+      }
+    }
+
+
+    .titleSecc {
+      color: #333333;
+      font-family: "Roboto Light";
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+
+    .titleSubSecc {
+      color: #333333;
+      font-family: "PT Serif";
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 64px;
+      margin-bottom: 50px;
+
+    }
+
+    .texto {
+      color: #333333;
+      font-family: "Roboto Light";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 32px;
+
+    }
+
+    .b_n {
+
+      style="     margin-top: 75px;    margin-bottom: 75px; background: rgba(249,247,242,1);
+background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 247, 242, 1)), color-stop(50%, rgba(249, 247, 242, 1)), color-stop(51%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+      background: -webkit-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: -o-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      background: linear-gradient(to bottom, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f7f2', endColorstr='#000000', GradientType=0);
+      "
+
     }
   </style>
 
@@ -44,7 +95,9 @@
 
 <body>
 
-  <div class="">
+  <div class="container-fluid p-0">
+
+    <!-- UNo Home-->
     <div class="banner colorear ">
       <div class="container">
 
@@ -56,10 +109,10 @@
             <span class="navbar-toggler-icon" style="color:#fff">
               <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                 <g id="Oval" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
-                  <circle cx="24" cy="24" r="24" stroke="none"/>
-                  <circle cx="24" cy="24" r="23.5" fill="none"/>
+                  <circle cx="24" cy="24" r="24" stroke="none" />
+                  <circle cx="24" cy="24" r="23.5" fill="none" />
                 </g>
-                <path id="Combined_Shape" data-name="Combined Shape" d="M0,12V10H12v2ZM0,7V5H12V7ZM0,2V0H12V2Z" transform="translate(18 18)" fill="#fff"/>
+                <path id="Combined_Shape" data-name="Combined Shape" d="M0,12V10H12v2ZM0,7V5H12V7ZM0,2V0H12V2Z" transform="translate(18 18)" fill="#fff" />
               </svg>
 
 
@@ -91,40 +144,51 @@
             <form class="form-inline my-2 my-lg-0">
 
               <svg id="social" xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48">
-                <g id="Oval" transform="translate(112)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
-                  <circle cx="24" cy="24" r="24" stroke="none" />
-                  <circle cx="24" cy="24" r="23.5" fill="none" />
-                </g>
 
-                <a class="nav-link" href="#" style="color:#fff;">
+
+                <a class="nav-link" href="https://www.instagram.com/photo.lebers/" style="color:#fff;" target="_blank">
+                  <g id="Oval" transform="translate(112)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
+                    <circle cx="24" cy="24" r="24" stroke="none" />
+                    <circle cx="24" cy="24" r="23.5" fill="none" />
+                  </g>
+
+
                   <path id="instagram"
                     d="M8,16c-2.144,0-2.431-.009-3.3-.049C1.79,15.818.181,14.209.048,11.3.009,10.448,0,10.165,0,8S.009,5.553.048,4.7C.181,1.792,1.79.183,4.7.05,5.563.009,5.822,0,8,0s2.455.009,3.3.05c2.912.132,4.52,1.74,4.651,4.652C15.991,5.569,16,5.856,16,8s-.009,2.432-.049,3.3c-.131,2.91-1.739,4.519-4.651,4.653C10.432,15.991,10.145,16,8,16ZM8,1.443c-2.113,0-2.376.006-3.232.045-2.169.1-3.181,1.111-3.28,3.28C1.452,5.589,1.441,5.837,1.441,8s.011,2.411.047,3.232c.1,2.168,1.113,3.18,3.28,3.28.841.039,1.093.047,3.232.047,2.115,0,2.371-.008,3.233-.047,2.168-.1,3.18-1.109,3.281-3.28.037-.848.045-1.1.045-3.232s-.008-2.382-.045-3.232C14.413,2.6,13.4,1.588,11.233,1.49,10.391,1.451,10.138,1.443,8,1.443ZM8,12.108A4.108,4.108,0,1,1,12.108,8,4.113,4.113,0,0,1,8,12.108ZM8,5.333A2.667,2.667,0,1,0,10.668,8,2.67,2.67,0,0,0,8,5.333Zm4.27-.643a.96.96,0,1,1,.961-.96A.961.961,0,0,1,12.27,4.691Z"
                     transform="translate(128 16)" fill="#fff" />
+
+                </a>
+
+                <a class="nav-link" href="https://www.twitter.com/LebersPhoto/" style="color:#fff;" target="_blank">
+
+
+
                   <g id="Oval-2" data-name="Oval" transform="translate(56)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
                     <circle cx="24" cy="24" r="24" stroke="none" />
                     <circle cx="24" cy="24" r="23.5" fill="none" />
                   </g>
 
+                  <path id="twitter"
+                    d="M16,1.54a6.57,6.57,0,0,1-1.885.517A3.3,3.3,0,0,0,15.559.241a6.568,6.568,0,0,1-2.085.8A3.284,3.284,0,0,0,7.88,4.031,9.323,9.323,0,0,1,1.115.6,3.287,3.287,0,0,0,2.131,4.984,3.277,3.277,0,0,1,.645,4.573a3.287,3.287,0,0,0,2.633,3.26A3.29,3.29,0,0,1,1.8,7.889a3.287,3.287,0,0,0,3.067,2.279A6.606,6.606,0,0,1,0,11.529,9.284,9.284,0,0,0,5.031,13a9.284,9.284,0,0,0,9.331-9.765A6.618,6.618,0,0,0,16,1.54Z"
+                    transform="translate(72 18)" fill="#fff" />
                 </a>
+                <a class="nav-link" href="https://www.facebook.com/photo.lebers/" style="color:#fff;" target="_blank">
 
-
-
-                <path id="twitter"
-                  d="M16,1.54a6.57,6.57,0,0,1-1.885.517A3.3,3.3,0,0,0,15.559.241a6.568,6.568,0,0,1-2.085.8A3.284,3.284,0,0,0,7.88,4.031,9.323,9.323,0,0,1,1.115.6,3.287,3.287,0,0,0,2.131,4.984,3.277,3.277,0,0,1,.645,4.573a3.287,3.287,0,0,0,2.633,3.26A3.29,3.29,0,0,1,1.8,7.889a3.287,3.287,0,0,0,3.067,2.279A6.606,6.606,0,0,1,0,11.529,9.284,9.284,0,0,0,5.031,13a9.284,9.284,0,0,0,9.331-9.765A6.618,6.618,0,0,0,16,1.54Z"
-                  transform="translate(72 18)" fill="#fff" />
-                <g id="Oval-3" data-name="Oval" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
-                  <circle cx="24" cy="24" r="24" stroke="none" />
-                  <circle cx="24" cy="24" r="23.5" fill="none" />
-                </g>
-                <path id="facebook" d="M2.667,5.333H0V8H2.667v8h4V8H9.093l.24-2.667H6.667V4.223c0-.637.128-.889.744-.889H9.333V0H6.128c-2.4,0-3.461,1.056-3.461,3.077Z" transform="translate(19 16)" fill="#fff" />
+                  <g id="Oval-3" data-name="Oval" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
+                    <circle cx="24" cy="24" r="24" stroke="none" />
+                    <circle cx="24" cy="24" r="23.5" fill="none" />
+                  </g>
+                  <path id="facebook" d="M2.667,5.333H0V8H2.667v8h4V8H9.093l.24-2.667H6.667V4.223c0-.637.128-.889.744-.889H9.333V0H6.128c-2.4,0-3.461,1.056-3.461,3.077Z" transform="translate(19 16)" fill="#fff" />
+                </a>
               </svg>
+
 
             </form>
           </div>
         </nav>
 
 
-        <div class="agileits_w3layouts_banner_info row f_mt-50"  >
+        <div class="agileits_w3layouts_banner_info row f_mt-50">
           <div class="col-sm-12 col-lg-6 text-light mt-5">
             <h2>Welcome to our restaurant</h2>
             <p class="mt-2">Everyday 8:00 am - 23:00 pm</p>
@@ -148,34 +212,375 @@
 
         </div>
         <div class="thim-click-to-bottom">
-          <a href="#about" class="scroll">
+          <a href="#Discover" class="scroll Discover">
             <i class="fa  fa-chevron-down"></i>
           </a>
         </div>
       </div>
     </div>
-<div class="container  " style="
-    margin-top: 75px;
-    margin-bottom: 75px;
-">
-  <div class="row">
-    <div class="col-sm-12 col-lg-6">
-      <img src="images/barra.png" alt="" class="w-100">
+
+    <!-- DOS Discover -->
+    <div id="Discover" class="container  p-0" style="     margin-top: 160px;    margin-bottom: 160px;">
+      <div class="container-fluid  ">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 p-0" style="background: #bba285;  z-index: 1; border-radius: 3px;">
+            <img src="images/lamps.png" alt="" class="w-100" style="  opacity: 0.4; z-index: 2; border-radius: 3px;">
+          </div>
+          <div class="col-sm-12 col-lg-6 ">
+            <div class="row align-items-center h-100">
+              <div class="col-12 mx-auto">
+                <div class="jumbotron" style="background-color:#F9F7F2;">
+                  <div class="row  ">
+                    <div class="col-12 titleSecc"> Discover </div>
+                    <div class="col-12 titleSubSecc"> Our History </div>
+                    <div class="col-12 texto">
+                      A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good.
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Read more</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-12 col-lg-6">
 
+
+    <!-- tres -->
+    <div class="container-fluid bg-white   " style="     padding-top: 160px;    padding-bottom: 160px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
+      <div class="container     ">
+        <div class="row">
+
+          <div class="col-sm-12 col-lg-6 ">
+            <div class="row align-items-center h-100">
+              <div class="col-12 mx-auto">
+                <div class="pr-4 bg-white ">
+                  <div class="row  ">
+                    <div class="col-12 titleSecc">
+                      Check out our
+                    </div>
+                    <div class="col-12 titleSubSecc">
+                      Seasonal Offers
+                    </div>
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Alaskan Fish & Chips</div>
+                        <div class="float-right">$14.00</div>
+                      </div>
+                      <div> Served with soy sauce, wasabi, pickled ginger and chopsticks </div>
+                      <hr>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Fishermen’s Basket</div>
+                        <div class="float-right">$7.00</div>
+                      </div>
+                      <div> Snow crab, avocado, cucumber, tobiko, Japanese mayonnaise </div>
+                      <hr>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Chicken Breat Saute Sec </div>
+                        <div class="float-right">$5.00</div>
+                      </div>
+                      <div> A Latte is a coffee drink made with espresso and steamed milk </div>
+                      <hr>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="  clearfix">
+                        <div class="float-left">Crisp Pork Belly</div>
+                        <div class="float-right">$18.00</div>
+                      </div>
+                      <div> Candied salmon, basil potato puree, baby kale marsala </div>
+                      <hr>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <img src="images/seasonal.png" alt="" class="w-100">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Cuatro -->
+    <div class="container  " style="  padding-top: 160px;    padding-bottom: 160px;  ">
+      <div class="row">
+
+        <div class="col-12 text-center titleSecc"> Tasty Dishes </div>
+        <div class="col-12 text-center titleSubSecc "> For Lunch </div>
+        <div class="col-sm-12 col-lg-6 "> img </div>
+        <div class="col-sm-12 col-lg-6 "> img </div>
+        <div class="col-sm-12 col-lg-6 "> img </div>
+        <div class="col-sm-12 col-lg-6 "> img </div>
+        <div class="col-sm-12 col-lg-6 "> img </div>
+        <div class="col-sm-12 col-lg-6 "> img </div>
+
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-primary mt-4  " style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- cinco Party with us! -->
+    <div class="container-fluid   " style="background-color: #000;    padding-top: 104px;    padding-bottom: 160px;   ">
+      <div class="container  ">
+        <div class="row">
+
+          <div class="col-12 text-center text-white titleSecc"> Party with us! </div>
+          <div class="col-12 text-center text-white titleSubSecc"> Upcoming Events </div>
+
+          <div class="col-sm-12 col-lg-6 pr-0">
+            <img src="images/gorro.png" alt="" class="w-100">
+          </div>
+          <div class="col-sm-12 col-lg-6 pl-0 bg-white">
+
+            <div class="row align-items-center h-100">
+              <div class="col-12 mx-auto">
+                <div class="jumbotron bg-white f_ml-50 " style="    margin-bottom: 0px;padding-left: 16px;">
+                  <div class="row  ">
+                    <div class="col-12 titleSecc"> Upcoming </div>
+                    <div class="col-12 titleSubSecc"> Coffee Night </div>
+                    <div class="col-12"> 25 september, 2019 </div>
+                    <div class="col-12 texto text-justify">
+                      Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- seis  Gallery-->
+    <div class="container  " style="      padding-top: 120px;    padding-bottom: 120px;  ">
+      <div class="row">
+
+        <div class="col-12 text-center titleSecc"> Gallery </div>
+        <div class="col-12 text-center titleSubSecc"> Our Interior </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_01.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_02.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_03.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_04.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_05.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_06.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!-- siete -->
+    <div class="container-fluid b_n  ">
+      <div class="container   ">
+        <div class="row">
+
+          <div class="col-12 text-center titleSecc"> What people </div>
+          <div class="col-12 text-center titleSubSecc"> Say About Us</div>
+          <div class="col-12   ">
+
+            <div class="card border-0 ">
+              <img class="card-img-top " src="images/cabeza.png" alt="" style="    width: 128px;">
+              <div class="card-body">
+                <p class="card-text text-center">As I went on, still gaining velocity, the palpitation of night and day merged into one continuous greyness the sky took on a wonderful deepness of blue, a splendid luminous color like that of early
+                  twilight; the jerking sun became a streak of fire, a brilliant arch.</p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ocho -->
+    <div class="container-fluid   " style="     background-color:#000000;">
+      <div class="row">
+
+        <div class="col-12 text-center text-white titleSecc"> Tasty Dishes </div>
+        <div class="col-12 text-center text-white titleSubSecc"> For Lunch </div>
+        <div class="col-sm-12 col-lg-4 ">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 ">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 ">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-primary mt-4  " style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- 9 -->
+    <div class="container  " style="     margin-top: 75px;    margin-bottom: 75px;">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <img src="images/batido.png" alt="" class="w-100">
+        </div>
+        <div class="col-sm-12 col-lg-6 ">
+          <div class="row align-items-center h-100">
+            <div class="col-12 mx-auto">
+              <div class="jumbotron" style="background-color:#F9F7F2;">
+                <div class="row  ">
+                  <div class="col-12 titleSecc">
+                    The word from
+                  </div>
+                  <div class="col-12 titleSubSecc">
+                    Our Chef
+                  </div>
+
+                  <div class="col-12">
+                    "A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good."
+                  </div>
+
+                  <div class="col-12">
+                    Slavcho Karbashewski
+                  </div>
+
+                  <div class="col-12">
+                    Head Chef
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 10 -->
+    <div class="container  " style="     margin-top: 75px;    margin-bottom: 75px;">
+      <div class="row">
+
+        <div class="col-sm-12 col-lg-6 ">
+          <div class="row align-items-center h-100">
+            <div class="col-12 mx-auto">
+              <div class="jumbotron" style="background-color:#F9F7F2;">
+                <div class="row  ">
+                  <div class="col-12 titleSecc">
+                    Reserve
+                  </div>
+                  <div class="col-12 titleSubSecc">
+                    A Table
+                  </div>
+                  <div class="col-12">
+                    bla bla bla bla bla
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary mt-4 w-100" style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <img src="images/mesa.png" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 11 -->
+    <div class="container  bg-dark  p-5" style="     margin-top: 75px;    margin-bottom: 75px;  ">
+      <div class="row">
+
+        <div class="col-12 text-center text-white titleSecc"> Tasty Dishes </div>
+        <div class="col-12 text-center text-white titleSubSecc"> For Lunch </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <script src="popper.min.js"></script>
 
   <!-- bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script src="bootstrap.min.js"></script>
+
+  <script>
+  $(function(){
+  $('a[href*=\\#]').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+  && location.hostname == this.hostname) {
+  var $target = $(this.hash);
+  $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+  if ($target.length) {
+  var targetOffset = $target.offset().top;
+  $('html,body').animate({scrollTop: targetOffset}, 800);
+  return false;
+  }
+  }
+  });
+  });
+  </script>
 
 </body>
 
