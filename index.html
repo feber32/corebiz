@@ -30,6 +30,7 @@
         url(images/fondo.jpg);
     }
 
+    /* Movil*/
     @media (max-width: 576px) {
       .jumbotron {
         padding: 2rem 0rem;
@@ -53,9 +54,15 @@
         padding-top: 80px;
         padding-bottom: 80px;
         padding-right: 0px;
-        padding-left: 0px;   
+        padding-left: 0px;
+      }
+      .TastyDishes{
+        margin-top: 70px;
+        margin-bottom: 70px;
       }
     }
+
+    /* PC */
     @media (min-width: 576px) {
       .f_mt-50 {
         margin-top: 50px;
@@ -70,8 +77,13 @@
       .CheckOutOur{
         padding-top: 160px;
         padding-bottom: 160px;
-
-
+        -webkit-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+        -moz-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+        box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+      }
+      .TastyDishes{
+        margin-top: 120px;
+        margin-bottom: 120px;
       }
 
     }
@@ -112,6 +124,22 @@
       background: -ms-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
       background: linear-gradient(to bottom, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f7f2', endColorstr='#000000', GradientType=0);
+    }
+
+    .ForLunch_01{
+      color: #333333;
+      font-family: "Roboto Light";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+
+    .ForLunch_02{
+      color: rgba(51, 51, 51, 0.5);
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
     }
 
   </style>
@@ -248,8 +276,8 @@
     </div>
 
     <!-- tres Check out our-->
-    <div class="container-fluid      " style=" box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);">
-      <div class="container-fluid  bg-white  CheckOutOur ">
+    <div class="container-fluid"  >
+      <div class="container-fluid  bg-white  CheckOutOur " style="box-shadow: 20px rgba(0, 0, 0, 0.05);">
         <div class="row">
           <div class="col-sm-12 col-lg-6 ">
             <div class="row align-items-center h-100">
@@ -306,20 +334,102 @@
       </div>
     </div>
 
-
-
     <!-- Cuatro -->
-    <div class="container  " style="  padding-top: 160px;    padding-bottom: 160px;  ">
+    <div class="container TastyDishes ">
       <div class="row">
 
         <div class="col-12 text-center titleSecc"> Tasty Dishes </div>
         <div class="col-12 text-center titleSubSecc "> For Lunch </div>
-        <div class="col-sm-12 col-lg-6 "> img </div>
-        <div class="col-sm-12 col-lg-6 "> img </div>
-        <div class="col-sm-12 col-lg-6 "> img </div>
-        <div class="col-sm-12 col-lg-6 "> img </div>
-        <div class="col-sm-12 col-lg-6 "> img </div>
-        <div class="col-sm-12 col-lg-6 "> img </div>
+        <div class="col-sm-12 col-lg-6 ">
+            <div class="row">
+                <div class="col-sm-5 col-lg-3 p-0">
+                    <img src="images/plato_02.png" alt="" style="width:112px;">
+                </div>
+                <div class="col-sm-7 col-lg-9 " style="padding-top: 20px;">
+                    <div class="  clearfix">
+                        <div class="float-left ForLunch_01"> Huitlacoche Tamle</div>
+                        <div class="float-right">$7.00</div>
+                    </div>
+                    <div class="ForLunch_02">Served pickled ginger and chopsticks</div>
+                </div>
+            </div>
+            <hr style="margin-top: 0px;">
+        </div>
+        <div class="col-sm-12 col-lg-6 ">
+            <div class="row">
+                <div class="col-sm-5 col-lg-3 p-0">
+                    <img src="images/plato_02.png" alt="" style="width:112px;">
+                </div>
+                <div class="col-sm-7 col-lg-9 " style="padding-top: 20px;">
+                    <div class="  clearfix">
+                        <div class="float-left ForLunch_01"> Huitlacoche Tamle</div>
+                        <div class="float-right">$7.00</div>
+                    </div>
+                    <div class="ForLunch_02">Served pickled ginger and chopsticks</div>
+                </div>
+            </div>
+            <hr style="margin-top: 0px;">
+        </div>
+        <div class="col-sm-12 col-lg-6 ">
+            <div class="row">
+                <div class="col-sm-5 col-lg-3 p-0">
+                    <img src="images/plato_02.png" alt="" style="width:112px;">
+                </div>
+                <div class="col-sm-7 col-lg-9 " style="padding-top: 20px;">
+                    <div class="  clearfix">
+                        <div class="float-left ForLunch_01"> Huitlacoche Tamle</div>
+                        <div class="float-right">$7.00</div>
+                    </div>
+                    <div class="ForLunch_02">Served pickled ginger and chopsticks</div>
+                </div>
+            </div>
+            <hr style="margin-top: 0px;">
+        </div>
+        <div class="col-sm-12 col-lg-6 ">
+            <div class="row">
+                <div class="col-sm-5 col-lg-3 p-0">
+                    <img src="images/plato_02.png" alt="" style="width:112px;">
+                </div>
+                <div class="col-sm-7 col-lg-9 " style="padding-top: 20px;">
+                    <div class="  clearfix">
+                        <div class="float-left ForLunch_01"> Huitlacoche Tamle</div>
+                        <div class="float-right">$7.00</div>
+                    </div>
+                    <div class="ForLunch_02">Served pickled ginger and chopsticks</div>
+                </div>
+            </div>
+            <hr style="margin-top: 0px;">
+        </div>
+        <div class="col-sm-12 col-lg-6 ">
+            <div class="row">
+                <div class="col-sm-5 col-lg-3 p-0">
+                    <img src="images/plato_02.png" alt="" style="width:112px;">
+                </div>
+                <div class="col-sm-7 col-lg-9 " style="padding-top: 20px;">
+                    <div class="  clearfix">
+                        <div class="float-left ForLunch_01"> Huitlacoche Tamle</div>
+                        <div class="float-right">$7.00</div>
+                    </div>
+                    <div class="ForLunch_02">Served pickled ginger and chopsticks</div>
+                </div>
+            </div>
+            <hr style="margin-top: 0px;">
+        </div>
+        <div class="col-sm-12 col-lg-6 ">
+            <div class="row">
+                <div class="col-sm-3 col-lg-3 p-0">
+                    <img src="images/plato_02.png" alt="" style="width:112px;">
+                </div>
+                <div class="col-sm-9 col-lg-9 " style="padding-top: 20px;">
+                    <div class="  clearfix">
+                        <div class="float-left ForLunch_01"> Huitlacoche Tamle</div>
+                        <div class="float-right">$7.00</div>
+                    </div>
+                    <div class="ForLunch_02">Served pickled ginger and chopsticks</div>
+                </div>
+            </div>
+            <hr style="margin-top: 0px;">
+        </div>
 
         <div class="col-12 text-center">
           <button type="button" class="btn btn-primary mt-4  " style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
