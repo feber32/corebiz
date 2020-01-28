@@ -1,0 +1,223 @@
+body {
+  font-family: 'PT Serif', serif !important;
+  background-color: #f9f7f2;
+}
+.colorear {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)),
+    url(../images/fondo.jpg);
+}
+
+/* Movil*/
+@media (max-width: 576px) {
+  .jumbotron {
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+  }
+  .col-12{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .discover{
+     margin-top: 80px;
+     margin-bottom: 80px;
+  }
+  .col-sm-12{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .CheckOutOur{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .Reserve{
+    padding-top: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    padding-bottom: 50px;
+  }
+  .TastyDishes{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .Press{
+    padding-top: 119px;
+    padding-bottom: 119px;
+
+  }
+  .text-center {
+    text-align: center !important;
+    padding: 0rem !important;
+  }
+  .img_reserve{
+ width:100%!important
+   }
+}
+
+/* PC */
+@media (min-width: 576px) {
+  .f_mt-50 {
+    margin-top: 50px;
+  }
+  .f_ml-50 {
+    margin-left: 66px;
+  }
+  .discover{
+     margin-top: 160px;
+     margin-bottom: 160px;
+  }
+  .Reserve{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    -webkit-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+    -moz-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+    box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+  }
+  .CheckOutOur{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    -webkit-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+    -moz-box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+    box-shadow: -5px 5px 17px 6px rgba(0,0,0,0.46);
+  }
+  .TastyDishes{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .texto{
+    text-align: justify !important;
+  }
+  .Press{
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+  }
+  .img_reserve{
+ width:100%!important
+   }
+
+}
+
+.titleSecc {
+  color: #333333;
+  font-family: "Roboto Light";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.titleSubSecc {
+  color: #333333;
+  font-family: "PT Serif";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 50px;
+
+}
+
+.texto {
+  color: #333333;
+  font-family: "Roboto Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+
+}
+
+.b_n {
+  margin-top: 75px;    margin-bottom: 75px; background: rgba(249,247,242,1);
+  background: -moz-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 247, 242, 1)), color-stop(50%, rgba(249, 247, 242, 1)), color-stop(51%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+  background: -webkit-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+  background: -o-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgba(249, 247, 242, 1) 0%, rgba(249, 247, 242, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f7f2', endColorstr='#000000', GradientType=0);
+}
+
+.ForLunch_01{
+  color: #333333;
+  font-family: "Roboto Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.ForLunch_02{
+  color: rgba(51, 51, 51, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.magnus{
+  color: #333333;
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.expert{
+  color: rgba(51, 51, 51, 0.5);
+  font-family: "Roboto Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.title_03{
+    /* Style for "Slavcho Ka" */
+      color: #333333;
+    font-family: "PT Serif";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.title_04{
+  /* Style for "Head Chef" */
+   color: rgba(51, 51, 51, 0.5);
+  font-family: "Roboto Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.title_05{
+  /* Style for "Reserve" */
+
+    color: #333333;
+    font-family: "Roboto Light";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.menu_02{
+
+  /* Style for "About Us" */
+width: 502px;
+height: 32px;
+color: #ffffff;
+font-family: "Roboto Light";
+font-size: 20px;
+font-weight: 300;
+line-height: 32px;
+}
+.pie_01{
+  /* Style for "2019 Resta" */
+
+color: rgba(255, 255, 255, 0.5);
+font-family: "Roboto Light";
+font-size: 20px;
+font-weight: 300;
+line-height: 32px;
+}
