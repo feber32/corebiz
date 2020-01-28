@@ -16,6 +16,10 @@
   <!-- googleapis-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap" >
 
+  <link href='plugins/simplelightbox-master/dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+
+  <link href='plugins/simplelightbox-master/demo/demo.css' rel='stylesheet' type='text/css'>
+
 
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 
@@ -432,12 +436,11 @@
         </div>
 
         <div class="col-12 text-center">
-          <button type="button" class="btn btn-primary mt-4  " style="background-color:#6327EB; border-color:#6327EB;">Book a table</button>
+          <button type="button" class="btn btn-primary mt-4  " style="background-color:#6327EB; border-color:#6327EB;">Full menu</button>
         </div>
 
       </div>
     </div>
-
 
     <!-- cinco Party with us! -->
     <div class="container-fluid   " style="background-color: #000;    padding-top: 104px;    padding-bottom: 160px;   ">
@@ -452,7 +455,7 @@
           </div>
           <div class="col-sm-12 col-lg-6 pl-0 bg-white">
 
-            <div class="row align-items-center h-100">
+            <div class="row align-items-center h-50">
               <div class="col-12 mx-auto">
                 <div class="jumbotron bg-white f_ml-50 " style="    margin-bottom: 0px;padding-left: 16px;">
                   <div class="row  ">
@@ -478,18 +481,40 @@
 
     <!-- seis  Gallery-->
     <div class="container  " style="      padding-top: 120px;    padding-bottom: 120px;  ">
-      <div class="row">
+      <div class="row gallery">
 
         <div class="col-12 text-center titleSecc"> Gallery </div>
         <div class="col-12 text-center titleSubSecc"> Our Interior </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_01.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_02.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_03.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_04.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_05.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
-        <div class="col-sm-12 col-lg-4 "> <img src="images/gallery_06.png" alt="" class="w-100" style="margin-bottom:32px;"> </div>
-
-
+        <div class="col-sm-12 col-lg-4">
+    			<a href="images/gallery_01.png">
+            <img class="w-100" style="margin-bottom:32px;" src="images/gallery_01.png" alt="" title="Beautiful Image" />
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+    			<a href="images/gallery_02.png">
+            <img class="w-100" style="margin-bottom:32px;" src="images/gallery_02.png" alt="" title="Beautiful Image" />
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+    			<a href="images/gallery_03.png">
+            <img class="w-100" style="margin-bottom:32px;" src="images/gallery_03.png" alt="" title="Beautiful Image" />
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+    			<a href="images/gallery_04.png">
+            <img class="w-100" style="margin-bottom:32px;" src="images/gallery_04.png" alt="" title="Beautiful Image" />
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+    			<a href="images/gallery_05.png">
+            <img class="w-100" style="margin-bottom:32px;" src="images/gallery_05.png" alt="" title="Beautiful Image" />
+          </a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+    			<a href="images/gallery_06.png">
+            <img class="w-100" style="margin-bottom:32px;" src="images/gallery_06.png" alt="" title="Beautiful Image" />
+          </a>
+        </div>
       </div>
     </div>
 
@@ -659,7 +684,8 @@
 
 
     <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="popper.min.js"></script>
@@ -667,6 +693,8 @@
     <!-- bootstrap -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="plugins/simplelightbox-master/dist/simple-lightbox.js"></script>
 
     <script>
       $(function() {
@@ -686,6 +714,53 @@
         });
       });
     </script>
+
+    <script>
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
 
 </body>
 
